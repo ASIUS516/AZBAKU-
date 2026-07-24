@@ -2,13 +2,16 @@ import 'dotenv/config';
 import express from 'express';
 import session from 'express-session';
 import cors from 'cors';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-import './db/db.js'; // initializes + seeds the database on first run
+import './db/db.js';
 import roomsRouter from './routes/rooms.js';
 import bookingsRouter from './routes/bookings.js';
 import adminRouter from './routes/admin.js';
 import reviewsRouter from './routes/reviews.js';
 
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
 const PORT = process.env.PORT || 4000;
 
@@ -17,8 +20,6 @@ app.use(cors({
   credentials: true
 }));
 
-// IMPORTANT: the Stripe webhook route needs the RAW body (not JSON-parsed) to verify signatures.
-// So we mount it BEFORE express.json() runs on the rest of the app.
 app.post('/api/bookings/webhook', express.raw({ type: 'application/json' }));
 
 app.use(express.json());
@@ -29,8 +30,8 @@ app.use(session({
   saveUninitialized: false,
   cookie: {
     httpOnly: true,
-    secure: process.env.NODE_ENV === 'production', // only https-only cookies in production
-    maxAge: 1000 * 60 * 60 * 8 // 8 hour admin session
+    secure: process.env.NODE_ENV === 'production',
+    maxAge: 1000 * 60 * 60 * 8
   }
 }));
 
@@ -43,8 +44,21 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
+const frontendDist = path.join(__dirname, '..', 'frontend', 'dist');
+app.use(express.static(frontendDist));
+
+app.get(/^(?!\/api).*/, (req, res, next) => {
+  res.sendFile(path.join(frontendDist, 'index.html'), (err) => {
+    if (err) next();
+  });
+});
+
 app.use((req, res) => {
   res.status(404).json({ error: 'Not found' });
+});
+
+app.listen(PORT, () => {
+  console.log(AZBAKU Hotel backend running on http://localhost:${PORT});
 });
 
 app.listen(PORT, () => {
