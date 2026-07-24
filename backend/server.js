@@ -58,7 +58,7 @@ app.use((req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(AZBAKU Hotel backend running on http://localhost:${PORT});
+  console.log(`AZBAKU Hotel backend running on http://localhost:${PORT}`);
 });
 
 app.listen(PORT, () => {
