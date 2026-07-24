@@ -13,10 +13,10 @@ html {
 }
 
 body {
-  overflow-x: hidden;
   margin: 0;
   width: 100%;
   max-width: 100%;
+  overflow-x: hidden;
   color: var(--color-slate);
   background: var(--color-ice);
   font-size: var(--fs-body);
