@@ -1,0 +1,141 @@
+{
+  "nav": {
+    "home": "Home",
+    "rooms": "Rooms",
+    "about": "About",
+    "gallery": "Gallery",
+    "reviews": "Reviews",
+    "contacts": "Contacts",
+    "bookNow": "Book Now"
+  },
+  "home": {
+    "heroTitle": "Stay where Baku does business",
+    "heroSubtitle": "A business hotel in the heart of the city — book direct and skip the agency commission.",
+    "checkAvailability": "Check availability",
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "search": "Search rooms",
+    "whyUsTitle": "Why book direct with us",
+    "whyUs1Title": "No commission markup",
+    "whyUs1Text": "Booking platforms charge 15-20% commission. Direct bookings mean better value, guaranteed.",
+    "whyUs2Title": "Business-ready rooms",
+    "whyUs2Text": "Fast Wi-Fi, real desks, and a business lounge — built around a work trip, not a vacation.",
+    "whyUs3Title": "Central location",
+    "whyUs3Text": "Minutes from the business district, with the city's skyline right outside your window.",
+    "featuredRooms": "Featured rooms",
+    "viewAllRooms": "View all rooms"
+  },
+  "rooms": {
+    "title": "Rooms & Suites",
+    "subtitle": "Six room types, built for every kind of stay.",
+    "perNight": "/ night",
+    "capacity": "Up to {count} guests",
+    "size": "{size} m²",
+    "viewDetails": "View details",
+    "bookRoom": "Book this room"
+  },
+  "roomDetail": {
+    "amenities": "Amenities",
+    "description": "Description",
+    "selectDates": "Select your dates",
+    "nights": "{count} night(s)",
+    "totalPrice": "Total",
+    "unitsLeft": "{count} room(s) left for these dates",
+    "soldOut": "Fully booked for these dates",
+    "proceedToBook": "Proceed to booking",
+    "back": "Back to rooms"
+  },
+  "booking": {
+    "title": "Confirm your booking",
+    "guestDetails": "Guest details",
+    "fullName": "Full name",
+    "email": "Email",
+    "phone": "Phone (optional)",
+    "summary": "Booking summary",
+    "payNow": "Pay & confirm booking",
+    "testModeNotice": "This is a portfolio demo running Stripe in test mode — no real charge will be made. Use card number 4242 4242 4242 4242 with any future expiry and any CVC.",
+    "successTitle": "Booking confirmed",
+    "successText": "Thank you, {name}. A confirmation has been recorded for your stay.",
+    "cancelledTitle": "Booking not completed",
+    "cancelledText": "Your payment was cancelled and no booking was made. You can try again anytime."
+  },
+  "about": {
+    "title": "About AZBAKU",
+    "text1": "AZBAKU opened its doors in the business district of Baku with one goal: make business travel feel less like a compromise.",
+    "text2": "Every room is designed around a desk, not just a bed — because most of our guests are here to get things done, not just to sleep.",
+    "infoTitle": "Hotel information",
+    "checkInTime": "Check-in from 14:00",
+    "checkOutTime": "Check-out until 12:00",
+    "parking": "Free private parking",
+    "breakfast": "Breakfast available 07:00–10:30"
+  },
+  "gallery": {
+    "title": "Gallery"
+  },
+  "reviews": {
+    "title": "Guest reviews"
+  },
+  "contacts": {
+    "title": "Contacts & location",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "mapLink": "Open in Google Maps"
+  },
+  "footer": {
+    "tagline": "A business hotel in the heart of Baku.",
+    "quickLinks": "Quick links",
+    "contactUs": "Contact us",
+    "rightsReserved": "All rights reserved.",
+    "portfolioNotice": "Demo project — built as a freelance portfolio piece."
+  },
+  "amenities": {
+    "wifi": "Wi-Fi",
+    "ac": "Air conditioning",
+    "desk": "Work desk",
+    "tv": "Smart TV",
+    "safe": "In-room safe",
+    "minibar": "Minibar",
+    "lounge_access": "Business lounge access",
+    "breakfast": "Breakfast included",
+    "living_room": "Separate living room",
+    "city_view": "City view",
+    "terrace": "Private terrace",
+    "butler": "Butler service"
+  },
+  "admin": {
+    "loginTitle": "Admin login",
+    "email": "Email",
+    "password": "Password",
+    "login": "Log in",
+    "logout": "Log out",
+    "dashboard": "Dashboard",
+    "bookingsManagement": "Bookings",
+    "roomsManagement": "Rooms",
+    "totalRevenue": "Total confirmed revenue",
+    "upcomingStays": "Upcoming stays",
+    "pendingPayments": "Pending payments",
+    "confirmedBookings": "Confirmed bookings",
+    "status": "Status",
+    "guest": "Guest",
+    "room": "Room",
+    "dates": "Dates",
+    "price": "Price",
+    "actions": "Actions",
+    "savePrice": "Save"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong. Please try again.",
+    "currency": "Currency"
+  },
+  "calendar": {
+    "available": "Available",
+    "booked": "Booked",
+    "selected": "Selected"
+  },
+  "notFound": {
+    "title": "404",
+    "text": "Page not found."
+  }
+}

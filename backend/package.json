@@ -1,0 +1,22 @@
+{
+  "name": "azbaku-hotel-backend",
+  "version": "1.0.0",
+  "description": "Backend for AZBAKU business hotel demo (portfolio project)",
+  "main": "server.js",
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "stripe": "^16.2.0",
+    "dotenv": "^16.4.5"
+  }
+}

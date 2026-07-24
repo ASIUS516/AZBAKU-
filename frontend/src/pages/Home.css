@@ -1,0 +1,65 @@
+.hero {
+  position: relative;
+  background: linear-gradient(180deg, #EAF2FA 0%, var(--color-ice) 100%);
+  padding: var(--space-6) 0 0;
+  overflow: hidden;
+}
+.hero__inner { position: relative; z-index: 2; text-align: left; max-width: 640px; }
+.hero__title { font-size: var(--fs-hero); margin-bottom: var(--space-2); }
+.hero__subtitle { font-size: 1.1rem; color: var(--color-slate); margin-bottom: var(--space-4); }
+
+.hero__search {
+  display: flex;
+  gap: var(--space-2);
+  align-items: flex-end;
+  background: var(--color-white);
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-elevated);
+  border: 1px solid var(--color-line);
+  flex-wrap: wrap;
+}
+.hero__search .field { margin-bottom: 0; min-width: 160px; }
+.hero__search-btn { height: 46px; }
+
+/* Signature element: a minimal CSS-drawn skyline silhouette of Baku's business district,
+   built from simple shapes rather than a stock photo - keeps the hero on-brand without needing
+   real photography for this portfolio demo. Replace with real photography for a live client. */
+.hero__skyline {
+  position: relative;
+  height: 140px;
+  margin-top: var(--space-5);
+  background:
+    linear-gradient(var(--color-ink), var(--color-ink)) 4% 100% / 4% 60% no-repeat,
+    linear-gradient(var(--color-ink), var(--color-ink)) 10% 100% / 3% 85% no-repeat,
+    linear-gradient(var(--color-deep-azure), var(--color-deep-azure)) 16% 100% / 5% 45% no-repeat,
+    linear-gradient(var(--color-ink), var(--color-ink)) 23% 100% / 3% 100% no-repeat,
+    linear-gradient(var(--color-deep-azure), var(--color-deep-azure)) 29% 100% / 6% 70% no-repeat,
+    linear-gradient(var(--color-ink), var(--color-ink)) 37% 100% / 4% 55% no-repeat,
+    linear-gradient(var(--color-accent), var(--color-accent)) 43% 100% / 3.5% 92% no-repeat,
+    linear-gradient(var(--color-ink), var(--color-ink)) 49% 100% / 5% 65% no-repeat,
+    linear-gradient(var(--color-deep-azure), var(--color-deep-azure)) 57% 100% / 3% 40% no-repeat,
+    linear-gradient(var(--color-ink), var(--color-ink)) 62% 100% / 4% 78% no-repeat,
+    linear-gradient(var(--color-accent), var(--color-accent)) 69% 100% / 3.5% 100% no-repeat,
+    linear-gradient(var(--color-ink), var(--color-ink)) 75% 100% / 5% 50% no-repeat,
+    linear-gradient(var(--color-deep-azure), var(--color-deep-azure)) 83% 100% / 3% 68% no-repeat,
+    linear-gradient(var(--color-ink), var(--color-ink)) 89% 100% / 4% 42% no-repeat;
+  opacity: 0.9;
+}
+.hero__skyline::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 4px;
+  background: var(--color-ink);
+}
+
+.why-card h3 { color: var(--color-white); }
+.why-card p { color: #C9D6E5; }
+
+.home__view-all { text-align: center; margin-top: var(--space-4); }
+
+@media (max-width: 700px) {
+  .hero__search { flex-direction: column; align-items: stretch; }
+  .hero__search .field { min-width: 0; }
+}

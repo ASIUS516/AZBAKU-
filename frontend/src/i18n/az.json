@@ -1,0 +1,141 @@
+{
+  "nav": {
+    "home": "Ana səhifə",
+    "rooms": "Otaqlar",
+    "about": "Otel haqqında",
+    "gallery": "Qalereya",
+    "reviews": "Rəylər",
+    "contacts": "Əlaqə",
+    "bookNow": "Rezerv et"
+  },
+  "home": {
+    "heroTitle": "Bakının biznesi burada dayanır",
+    "heroSubtitle": "Şəhərin mərkəzində biznes otel — birbaşa rezerv edin, agentlik komissiyası ödəməyin.",
+    "checkAvailability": "Boş otaqları yoxlayın",
+    "checkIn": "Giriş",
+    "checkOut": "Çıxış",
+    "search": "Otaq axtar",
+    "whyUsTitle": "Niyə bizimlə birbaşa rezerv etməlisiniz",
+    "whyUs1Title": "Vasitəçi komissiyası yoxdur",
+    "whyUs1Text": "Rezervasiya platformaları 15-20% komissiya alır. Birbaşa rezervasiya həmişə daha sərfəlidir.",
+    "whyUs2Title": "Biznes üçün otaqlar",
+    "whyUs2Text": "Sürətli Wi-Fi, real iş masası və biznes lounge — istirahət üçün deyil, ezamiyyət üçün.",
+    "whyUs3Title": "Mərkəzi yerləşmə",
+    "whyUs3Text": "Biznes rayonuna bir neçə dəqiqəlik məsafə, pəncərədən şəhərin siluetinin mənzərəsi.",
+    "featuredRooms": "Populyar otaqlar",
+    "viewAllRooms": "Bütün otaqlara bax"
+  },
+  "rooms": {
+    "title": "Otaqlar və suitlər",
+    "subtitle": "Hər səfər məqsədi üçün altı otaq növü.",
+    "perNight": "/ gecə",
+    "capacity": "{count} qonağa qədər",
+    "size": "{size} m²",
+    "viewDetails": "Ətraflı",
+    "bookRoom": "Bu otağı rezerv et"
+  },
+  "roomDetail": {
+    "amenities": "İmkanlar",
+    "description": "Təsvir",
+    "selectDates": "Tarixləri seçin",
+    "nights": "{count} gecə",
+    "totalPrice": "Cəmi",
+    "unitsLeft": "Bu tarixlər üçün qalıb: {count} otaq",
+    "soldOut": "Bu tarixlər üçün yerlər doludur",
+    "proceedToBook": "Rezervasiyaya keç",
+    "back": "Otaqlara qayıt"
+  },
+  "booking": {
+    "title": "Rezervasiyanı təsdiqləyin",
+    "guestDetails": "Qonaq məlumatları",
+    "fullName": "Ad və soyad",
+    "email": "Email",
+    "phone": "Telefon (məcburi deyil)",
+    "summary": "Rezervasiya təfərrüatları",
+    "payNow": "Ödə və rezervasiyanı təsdiqlə",
+    "testModeNotice": "Bu, portfolio üçün demo layihədir, Stripe test rejimində işləyir — real ödəniş olunmayacaq. 4242 4242 4242 4242 kart nömrəsini, istənilən gələcək tarixi və istənilən CVC-ni istifadə edin.",
+    "successTitle": "Rezervasiya təsdiqləndi",
+    "successText": "Təşəkkürlər, {name}. Rezervasiyanız qeydə alındı.",
+    "cancelledTitle": "Rezervasiya tamamlanmadı",
+    "cancelledText": "Ödəniş ləğv edildi, rezervasiya yaradılmadı. İstənilən vaxt yenidən cəhd edə bilərsiniz."
+  },
+  "about": {
+    "title": "AZBAKU haqqında",
+    "text1": "AZBAKU Bakının biznes rayonunda bir məqsədlə açıldı: ezamiyyəti kompromis deyil, rahat etmək.",
+    "text2": "Hər otaq təkcə çarpayı deyil, iş masası ətrafında dizayn edilib — qonaqlarımızın çoxu istirahət üçün deyil, iş görmək üçün gəlir.",
+    "infoTitle": "Otel haqqında məlumat",
+    "checkInTime": "Giriş saat 14:00-dan",
+    "checkOutTime": "Çıxış saat 12:00-a qədər",
+    "parking": "Pulsuz mühafizəli parkinq",
+    "breakfast": "Səhər yeməyi 07:00–10:30"
+  },
+  "gallery": {
+    "title": "Qalereya"
+  },
+  "reviews": {
+    "title": "Qonaq rəyləri"
+  },
+  "contacts": {
+    "title": "Əlaqə və yerləşmə",
+    "address": "Ünvan",
+    "phone": "Telefon",
+    "email": "Email",
+    "mapLink": "Google Maps-də aç"
+  },
+  "footer": {
+    "tagline": "Bakının mərkəzində biznes otel.",
+    "quickLinks": "Sürətli keçidlər",
+    "contactUs": "Bizimlə əlaqə",
+    "rightsReserved": "Bütün hüquqlar qorunur.",
+    "portfolioNotice": "Demo layihə — freelance portfolio üçün hazırlanıb."
+  },
+  "amenities": {
+    "wifi": "Wi-Fi",
+    "ac": "Kondisioner",
+    "desk": "İş masası",
+    "tv": "Smart TV",
+    "safe": "Otaqda seyf",
+    "minibar": "Mini-bar",
+    "lounge_access": "Biznes lounge girişi",
+    "breakfast": "Səhər yeməyi daxildir",
+    "living_room": "Ayrı oturma otağı",
+    "city_view": "Şəhər mənzərəsi",
+    "terrace": "Şəxsi terras",
+    "butler": "Butler xidməti"
+  },
+  "admin": {
+    "loginTitle": "Admin girişi",
+    "email": "Email",
+    "password": "Şifrə",
+    "login": "Daxil ol",
+    "logout": "Çıxış",
+    "dashboard": "İdarə paneli",
+    "bookingsManagement": "Rezervasiyalar",
+    "roomsManagement": "Otaqlar",
+    "totalRevenue": "Təsdiqlənmiş gəlir",
+    "upcomingStays": "Gələcək qalmalar",
+    "pendingPayments": "Ödəniş gözləyir",
+    "confirmedBookings": "Təsdiqlənmiş rezervasiyalar",
+    "status": "Status",
+    "guest": "Qonaq",
+    "room": "Otaq",
+    "dates": "Tarixlər",
+    "price": "Qiymət",
+    "actions": "Əməliyyatlar",
+    "savePrice": "Yadda saxla"
+  },
+  "common": {
+    "loading": "Yüklənir...",
+    "error": "Xəta baş verdi. Yenidən cəhd edin.",
+    "currency": "Valyuta"
+  },
+  "calendar": {
+    "available": "Boş",
+    "booked": "Dolu",
+    "selected": "Seçilib"
+  },
+  "notFound": {
+    "title": "404",
+    "text": "Səhifə tapılmadı."
+  }
+}

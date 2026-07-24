@@ -1,0 +1,122 @@
+.calendar {
+  background: var(--color-white);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+  box-shadow: var(--shadow-card);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle seasonal wash in the background corner - a small polish detail requested by the client.
+   Kept quiet (low opacity, decorative only) so it never interferes with legibility. */
+.calendar::before {
+  content: '';
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  opacity: 0.35;
+  pointer-events: none;
+  filter: blur(6px);
+}
+.calendar--winter::before { background: radial-gradient(circle, #CFE4F7, transparent 70%); }
+.calendar--spring::before { background: radial-gradient(circle, #D9F2E3, transparent 70%); }
+.calendar--summer::before { background: radial-gradient(circle, #FFF3C4, transparent 70%); }
+.calendar--autumn::before { background: radial-gradient(circle, #FBE0C4, transparent 70%); }
+
+.calendar__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-2);
+  position: relative;
+  z-index: 1;
+}
+.calendar__title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--color-ink);
+}
+.calendar__nav {
+  background: var(--color-accent-soft);
+  border: none;
+  color: var(--color-ink);
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  font-size: 1.1rem;
+}
+.calendar__nav:hover { background: var(--color-accent); color: var(--color-white); }
+
+.calendar__weekdays, .calendar__grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  position: relative;
+  z-index: 1;
+}
+.calendar__weekday {
+  text-align: center;
+  font-size: var(--fs-caption);
+  color: var(--color-slate-light);
+  font-weight: 700;
+  padding-bottom: 4px;
+}
+.calendar__grid--loading { opacity: 0.5; }
+
+.calendar__cell {
+  aspect-ratio: 1;
+  border: none;
+  background: transparent;
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-small);
+  color: var(--color-slate);
+  transition: background 0.12s ease, color 0.12s ease;
+}
+.calendar__cell--empty { visibility: hidden; }
+.calendar__cell:not(:disabled):hover {
+  background: var(--color-accent-soft);
+}
+.calendar__cell--past {
+  color: #C4CDD8;
+  cursor: not-allowed;
+}
+.calendar__cell--booked {
+  color: #C4CDD8;
+  text-decoration: line-through;
+  cursor: not-allowed;
+  background: #F1F3F6;
+}
+.calendar__cell--selected {
+  background: var(--color-accent) !important;
+  color: var(--color-white) !important;
+  font-weight: 700;
+}
+.calendar__cell--in-range {
+  background: var(--color-accent-soft);
+}
+
+.calendar__legend {
+  display: flex;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+  font-size: var(--fs-caption);
+  color: var(--color-slate-light);
+  position: relative;
+  z-index: 1;
+  flex-wrap: wrap;
+}
+.calendar__swatch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+.calendar__swatch--available { background: var(--color-white); border: 1px solid var(--color-line); }
+.calendar__swatch--booked { background: #F1F3F6; border: 1px solid #C4CDD8; }
+.calendar__swatch--selected { background: var(--color-accent); }
