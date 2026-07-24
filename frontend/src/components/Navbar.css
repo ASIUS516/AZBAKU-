@@ -85,4 +85,18 @@
   .navbar__links--open { display: flex; }
   .navbar__burger { display: flex; }
   .navbar__cta { display: none; }
+  @media (max-width: 600px) {
+  /* Скрываем селекторы языка и валюты на смартфонах */
+  select, 
+  .lang-select, 
+  .currency-select { 
+    display: none !important; 
+  }
+
+  /* Уменьшаем размер синей кнопки */
+  header button, 
+  .header-btn {
+    padding: 6px 10px !important;
+    font-size: 12px !important;
+  }
 }
